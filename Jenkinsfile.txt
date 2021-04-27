@@ -9,8 +9,8 @@ pipeline {
         stage('Odoo cmd') {
             steps {
                 def cmd ="sudo service odoo-server restart"
-                sh "$cmd"
-                echo "success"
+                sh '$cmd'
+                echo 'success'
             }
         }
     }
